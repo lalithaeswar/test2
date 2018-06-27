@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MYTHOUGHTS</string>
+    <string name="login_title">Account Login</string>
+    <!--hints-->
+<string name="username_hint">UserName</string>
+    <string name="password_hint">Password minimun 6 numbers </string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="signin_button">Sign in</string>
+</resources>

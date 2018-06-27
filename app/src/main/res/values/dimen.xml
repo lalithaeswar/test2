@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--loginPage-->
+    <!--title-->
+    <dimen name="title_margin_top">20dp</dimen>
+    <dimen name="title_margin_bottom">16dp</dimen>
+    <dimen name="login_title_text_size">26sp</dimen>
+  <!--textinput dimension in login page-->
+    <dimen name="realtive_margin_left">30dp</dimen>
+    <dimen name="realtive_margin_right">30dp</dimen>
+    <dimen name="realtive_margin_top">30dp</dimen>
+    <dimen name="linear_padding_top">30dp</dimen>
+    <!--password textbox dimen-->
+    <dimen name="password_margin_top">16dp</dimen>
+    <!--forgotpassword-->
+    <dimen name="forgot_password_margin_top">5dp</dimen>
+    <!--signin button-->
+    <dimen name="signin_button_margin_top">22dp</dimen>
+    <dimen name="signin_button_text_size">18sp</dimen>
+</resources>
+
+
