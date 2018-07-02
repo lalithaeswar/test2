@@ -2,8 +2,28 @@
     <string name="app_name">MYTHOUGHTS</string>
     <string name="login_title">Account Login</string>
     <!--hints-->
-<string name="username_hint">UserName</string>
-    <string name="password_hint">Password minimun 6 numbers </string>
+    <string name="username_hint1">UserName</string>
+    <string name="password_hint">Password </string>
+    <string name="fullname_hint">Full Name</string>
+    <string name="username_hint">User Name</string>
+    <string name="mobile_hint">Mobile Number</string>
+    <string name="email_hint">Email</string>
+    <string name="conform_password_hint">Conform Password</string>
+
     <string name="forgot_password">Forgot Password?</string>
     <string name="signin_button">Sign in</string>
+    <string name="gender">Gender</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="register_terms">i agree terms of service and privacy policy</string>
+    <string name="subscribe_but">Subscribe</string>
+    <string name="message">Already Have an Account?</string>
+    <string name="login">Login</string>
+    <string name="success_message">Successfully 1 record added</string>
+    <string name="error_email_exists">already have an account</string>
+    <string name="error_message_email">enter valid email</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+
 </resources>

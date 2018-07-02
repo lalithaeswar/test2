@@ -1,13 +1,14 @@
-package com.mythoughts;
+package com.mythoughts.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.mythoughts.R;
 
-public class RegistrationActivity extends AppCompatActivity {
+public class UsersListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        setContentView(R.layout.activity_users_list);
     }
 }
