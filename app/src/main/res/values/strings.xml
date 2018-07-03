@@ -25,5 +25,8 @@
     <string name="error_email_exists">already have an account</string>
     <string name="error_message_email">enter valid email</string>
     <string name="error_valid_email_password">Wrong Email or Password</string>
-
+    <string name="allaccounts">All Accounts</string>
+    <string name="name">NAME:</string>
+    <string name="email">Email Id :</string>
+    <string name="phonenumber">Phone Number</string>
 </resources>

@@ -115,7 +115,8 @@ public class RegistrationActivity extends AppCompatActivity implements  View.OnC
             databaseHelper.addUser(user);
 
             // Snack Bar to show success message that record saved successfully
-            Snackbar.make(scrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
+           // Snackbar.make(scrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
+            alertMessage();
             emptyInputEditText();
 
 
@@ -196,8 +197,10 @@ public class RegistrationActivity extends AppCompatActivity implements  View.OnC
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,
                                         int which) {
-                        Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
-                        startActivity(intent);
+                        Intent accountsIntent = new Intent(activity, UsersListActivity.class);
+                        startActivity(accountsIntent);
+                        emptyInputEditText();
+
                     }
                 });
         builder.show();

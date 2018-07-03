@@ -22,7 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.UsersListActivity"></activity>
+        <activity android:name=".activity.UsersListActivity"
+            android:label="All Users"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        </activity>
     </application>
 
 </manifest>
