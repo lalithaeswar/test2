@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <!--loginpage-->
+    <!--loginimage-->
+    <dimen name="login_image_margin_top">50dp</dimen>
+    <!--username-->
+    <dimen name="login_margin_start">30dp</dimen>
+    <dimen name="login_margin_end">30dp</dimen>
+    <dimen name="login_margin_top">30dp</dimen>
+    <dimen name="login_text_size">20sp</dimen>
+    <!--password-->
+    <dimen name="login_password_margin_top">10dp</dimen>
+    <!--signin button-->
+    <dimen name="button_margin_top">30dp</dimen>
+    <dimen name="btn_text_size">20sp</dimen>
+    <dimen name="forgotpassword_text_size">22sp</dimen>
+    <dimen name="onboard_title_size">25sp</dimen>
+    <dimen name="onboard_heading_text_size">15sp</dimen>
+
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+</resources>
