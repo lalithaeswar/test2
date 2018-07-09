@@ -12,12 +12,12 @@
     <string name="screen1_description">Amazing android app with cool \n features</string>
     <string name="features">features</string>
 
-
+    <string name="collapsing_toolbar">Collapsing Toolbar</string>
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>
     <string name="start">DONE</string>
-<string name="Anagasetivatam">Anaga  setivatam</string>
+    <string name="Anagasetivatam">Anaga  setivatam</string>
     <string name="slide_1_title">Hello Food!</string>
     <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
 
@@ -33,4 +33,10 @@
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
     <string name="indonesia">Indonesia</string>
+    <string name="title_activity_navigation">navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
 </resources>

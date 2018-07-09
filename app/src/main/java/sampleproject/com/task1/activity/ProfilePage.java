@@ -1,4 +1,4 @@
-package sampleproject.com.task1;
+package sampleproject.com.task1.activity;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -12,6 +12,7 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
+import sampleproject.com.task1.R;
 import sampleproject.com.task1.config.CircleTransform;
 
 public class ProfilePage extends AppCompatActivity {

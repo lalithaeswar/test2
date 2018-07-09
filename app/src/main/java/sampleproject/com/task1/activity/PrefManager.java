@@ -1,4 +1,4 @@
-package sampleproject.com.task1;
+package sampleproject.com.task1.activity;
 
 import android.content.Context;
 import android.content.SharedPreferences;

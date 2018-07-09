@@ -1,10 +1,12 @@
-package sampleproject.com.task1;
+package sampleproject.com.task1.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import sampleproject.com.task1.R;
 
 
 public class LoginActivity extends Activity  {
@@ -18,7 +20,7 @@ public class LoginActivity extends Activity  {
 
 public void onClick(View v){
 
-        Intent intent = new Intent(LoginActivity.this, ProfilePage.class);
+        Intent intent = new Intent(LoginActivity.this,navigation.class);
         startActivity(intent);
         }
         });
