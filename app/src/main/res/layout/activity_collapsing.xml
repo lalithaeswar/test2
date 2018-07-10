@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
@@ -30,8 +29,10 @@
                 android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/backdrop"
+            android:layout_marginTop="10dp"
             android:layout_width="100dp"
             android:layout_height="150dp"
+            android:contentDescription="@string/login_image_description"
             android:scaleType="centerCrop"
             android:src="@drawable/image1"
            android:layout_marginStart="30dp"
@@ -41,25 +42,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/backdrop"
-                android:paddingLeft="30dp"
+                android:layout_toEndOf="@+id/backdrop"
+                android:paddingStart="30dp"
+                android:paddingEnd="0dp"
                 android:orientation="vertical">
                 <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name:rfwerotip"
+                android:text="@string/collapse_header_image_name"
                 android:textColor="@color/colorwhite"
                 android:textSize="15sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name:rfwerotip"
+                    android:text="@string/collapse_header_image_name"
                     android:textColor="@color/colorwhite"
                     android:textSize="15sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name:rfwerotip"
+                    android:text="@string/collapse_header_image_name"
                     android:textColor="@color/colorwhite"
                     android:textSize="15sp"/>
             </LinearLayout>

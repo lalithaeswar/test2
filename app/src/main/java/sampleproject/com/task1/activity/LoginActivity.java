@@ -4,27 +4,24 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import sampleproject.com.task1.R;
 
 
-public class LoginActivity extends Activity  {
+public class LoginActivity extends Activity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button bn=findViewById(R.id.signin_btn);
-        bn.setOnClickListener(new View.OnClickListener() {
+    }
 
-public void onClick(View v){
-
-        Intent intent = new Intent(LoginActivity.this,navigation.class);
-        startActivity(intent);
+    @Override
+    public void onClick(View v) {
+        if(v.getId()==R.id.signin_btn)
+        {
+            Intent intent = new Intent(LoginActivity.this,navigation.class);
+            startActivity(intent);
         }
-        });
-
-
     }
 }

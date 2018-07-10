@@ -1,12 +1,13 @@
-package sampleproject.com.task1.activity;
+package sampleproject.com.task1.fragments;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.GridView;
-
 
 import java.util.ArrayList;
 
@@ -14,47 +15,55 @@ import sampleproject.com.task1.R;
 import sampleproject.com.task1.adapter.MyAdapter;
 import sampleproject.com.task1.model.Item;
 
-public class Gallery extends AppCompatActivity {
-    GridView simpleList;
-    ArrayList images = new ArrayList<>();
+public class Gallery extends Fragment {
+  private  View view;
+    private GridView simpleList;
+    private ArrayList images = new ArrayList<>();
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery1);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(myToolbar);
-        myToolbar.setTitle("Gallery");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        simpleList = (GridView) findViewById(R.id.gridView);
-        images.add(new Item("image 1", R.drawable.image1));
-        images.add(new Item("image 2", R.drawable.image2));
-        images.add(new Item("image 1", R.drawable.image1));
-        images.add(new Item("image 1", R.drawable.image1));
-        images.add(new Item("image 2", R.drawable.image2));
-        images.add(new Item("image 2", R.drawable.image2));
-        images.add(new Item("image 1", R.drawable.image1));
-        images.add(new Item("image 2", R.drawable.image2));
-        images.add(new Item("image 2", R.drawable.image3));
-        images.add(new Item("image 2", R.drawable.image4));
-        images.add(new Item("image 2", R.drawable.image5));
-        images.add(new Item("image 2", R.drawable.image6));
-        images.add(new Item("image 2", R.drawable.image2));
-        images.add(new Item("image 1", R.drawable.image1));
-        images.add(new Item("image 2", R.drawable.image2));
-        images.add(new Item("image 2", R.drawable.image3));
-        images.add(new Item("image 2", R.drawable.image4));
-        images.add(new Item("image 2", R.drawable.image5));
-        images.add(new Item("image 2", R.drawable.image6));
-        MyAdapter myAdapter = new MyAdapter(this, R.layout.activity_gridview1, images);
-        simpleList.setAdapter(myAdapter);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        if (view != null) {
+            ViewGroup parent = (ViewGroup) view.getParent();
+            if (parent != null) parent.removeView(view);
+        } else {
+            view = inflater.inflate(R.layout.activity_gallery1, container, false);
+            getActivity().setTitle("Gallery");
+            //Initialized views
+            initView(view);
+            initObjects();
+        }
 
+        return view;
+    }
+    private void initView(View v) {
+
+        simpleList =  v.findViewById(R.id.gridView);
     }
 
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return true;
+    private void initObjects() {
+        images.add(new Item("image 1", R.drawable.image1));
+        images.add(new Item("image 2", R.drawable.image2));
+        images.add(new Item("image 1", R.drawable.image1));
+        images.add(new Item("image 1", R.drawable.image1));
+        images.add(new Item("image 2", R.drawable.image2));
+        images.add(new Item("image 2", R.drawable.image2));
+        images.add(new Item("image 1", R.drawable.image1));
+        images.add(new Item("image 2", R.drawable.image2));
+        images.add(new Item("image 2", R.drawable.image3));
+        images.add(new Item("image 2", R.drawable.image4));
+        images.add(new Item("image 2", R.drawable.image5));
+        images.add(new Item("image 2", R.drawable.image6));
+        images.add(new Item("image 2", R.drawable.image2));
+        images.add(new Item("image 1", R.drawable.image1));
+        images.add(new Item("image 2", R.drawable.image2));
+        images.add(new Item("image 2", R.drawable.image3));
+        images.add(new Item("image 2", R.drawable.image4));
+        images.add(new Item("image 2", R.drawable.image5));
+        images.add(new Item("image 2", R.drawable.image6));
+        MyAdapter myAdapter = new MyAdapter(getActivity(), R.layout.activity_gridview1, images);
+        simpleList.setAdapter(myAdapter);
+
     }
 
 }
