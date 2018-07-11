@@ -166,9 +166,7 @@
                     android:id="@+id/text1"
                     android:layout_width="260dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignParenTop="true"
-                    android:layout_marginLeft="30dp"
-                    android:layout_toRightOf="@+id/icon1"
+                    android:layout_toEndOf="@+id/icon1"
                     android:text="@string/slide_2_desc"
                     android:textSize="15sp" />
 

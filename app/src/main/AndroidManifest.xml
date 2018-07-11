@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.LoginActivity" />
-
         <activity android:name=".activity.OnboardingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,16 +19,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ProfilePage"
-            android:label="@string/profilePage_theme">
-        </activity>
+        <activity
+            android:name=".activity.ProfilePage"
+            android:label="@string/profilePage_theme" />
         <activity
             android:name=".activity.navigation"
             android:label="@string/title_activity_navigation"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.Gallery"
-            android:label="@string/gallery_theme"/>
-        <activity android:name=".activity.CollapsingActivity"></activity>
+        <activity
+            android:name=".activity.Gallery"
+            android:label="@string/gallery_theme" />
+        <activity android:name=".activity.CollapsingActivity" />
+        <activity android:name=".activity.Customised_Toolbar"
+            android:label="@string/signup_name"/>
     </application>
 
 </manifest>

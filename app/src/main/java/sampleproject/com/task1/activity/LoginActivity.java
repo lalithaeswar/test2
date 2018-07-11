@@ -20,6 +20,12 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         if(v.getId()==R.id.signin_btn)
         {
+
+            Intent intent = new Intent(LoginActivity.this,Customised_Toolbar.class);
+            startActivity(intent);
+        }
+        if(v.getId()==R.id.forgot_password)
+        {
             Intent intent = new Intent(LoginActivity.this,navigation.class);
             startActivity(intent);
         }

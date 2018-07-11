@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">task1</string>
+    <string name="signup_name">Sign Up</string>
     <string name="profilePage_theme">ProfilePage</string>
     <string name="gallery_theme">Gallery</string>
     <string name="title_activity_pager">PagerActivity</string>
@@ -49,4 +50,19 @@
     <string name="fragment_one">One</string>
     <string name="frgment_two">Two</string>
     <string name="fragment_three">three</string>
+    <!--signup-->
+    <string name="enter_firstname_hint">Enter First Name</string>
+    <string name="enter_lastname_hint">Enter Last Name</string>
+    <string name="enter_email_hint">Enter Email</string>
+    <string name="enter_password_hint">Enter Password</string>
+    <string name="repeat_password_hint">Repeat Password</string>
+    <string name="Add_birthday_hint">Add Birthday</string>
+    <string name="pick_gender_hint">Pick Gender</string>
+    <string name="add_country_hint">Add Country</string>
+    <string name="city_hint">city</string>
+<string name="add_city_hint">Add City in Georgia</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
 </resources>

@@ -61,14 +61,18 @@
             android:textSize="@dimen/btn_text_size" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/login_margin_end"
-            android:layout_marginStart="@dimen/login_margin_start"
-            android:layout_marginTop="@dimen/button_margin_top"
-            android:gravity="center"
-            android:text="@string/forgot_password"
-            android:textColor="@color/colorwhite"
-            android:textSize="@dimen/forgotpassword_text_size" />
+            android:id="@+id/forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/login_margin_end"
+        android:layout_marginStart="@dimen/login_margin_start"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textColor="@color/colorwhite"
+        android:clickable="true"
+            android:focusable="true"
+        android:onClick="onClick"
+        android:textSize="@dimen/forgotpassword_text_size" />
     </LinearLayout>
 </RelativeLayout>
