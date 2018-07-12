@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <EditText
-            android:id="@+id/fullname_et"
+            android:id="@+id/firstname_et"
             android:hint="@string/enter_firstname_hint"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:inputType="textPersonName"
             android:textSize="@dimen/text_size_et"/>
         <TextView
-            android:id="@+id/fullname_tv"
+            android:id="@+id/firstname_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:paddingStart="0dp"
@@ -156,9 +156,6 @@
         android:layout_height="1dp"
         android:layout_below="@id/layout_4"
         android:background="@color/view_bg" />
-
-
-
     <LinearLayout
         android:id="@+id/layout_5"
         android:layout_width="match_parent"
@@ -196,8 +193,6 @@
         android:layout_height="1dp"
         android:layout_below="@id/layout_5"
         android:background="@color/view_bg" />
-
-
     <LinearLayout
         android:id="@+id/layout_6"
         android:layout_width="match_parent"
@@ -214,8 +209,9 @@
             android:layout_weight="1"
             android:paddingStart="@dimen/padding_text"
             android:paddingEnd="0dp"
+            android:onClick="onClick"
             android:textColorHint="@color/view_bg"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:textSize="@dimen/text_size_et"/>
         <TextView
             android:id="@+id/birthday_tv"
@@ -243,7 +239,7 @@
         android:layout_marginTop="@dimen/top_margin_view"
         android:layout_below="@id/view6"
         android:orientation="horizontal">
-        <EditText
+        <Spinner
             android:id="@+id/gender_et"
             android:hint="@string/pick_gender_hint"
             android:layout_width="0dp"
@@ -253,8 +249,9 @@
             android:paddingStart="@dimen/padding_text"
             android:paddingEnd="0dp"
             android:textColorHint="@color/view_bg"
-            android:inputType="textPassword"
-            android:textSize="@dimen/text_size_et"/>
+            android:inputType="text"
+            android:textSize="@dimen/text_size_et"
+            android:entries="@array/gender"/>
         <TextView
             android:id="@+id/gender_tv"
             android:layout_width="0dp"
@@ -293,7 +290,7 @@
             android:paddingStart="@dimen/padding_text"
             android:paddingEnd="0dp"
             android:textColorHint="@color/view_bg"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:textSize="@dimen/text_size_et"/>
         <TextView
             android:id="@+id/country_tv"
@@ -393,4 +390,11 @@
         android:layout_height="1dp"
         android:layout_below="@id/layout_10"
         android:background="@color/view_bg" />
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view10"
+        android:layout_marginTop="@dimen/top_margin_view"
+        android:text="@string/signin"/>
 </RelativeLayout>

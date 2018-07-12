@@ -65,4 +65,9 @@
     <string name="last_name">Last Name</string>
     <string name="email">E-mail</string>
     <string name="password">Password</string>
+    <string-array name="gender">
+        <item>@string/pick_gender_hint</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>
